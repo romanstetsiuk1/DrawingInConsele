@@ -36,10 +36,24 @@ public class Main {
         System.out.println();
     }
 
+//    Draw triangle by base size 10
+    public static void DrawTriangle() {
+        for (int i = 0; i < 10; i++ ) {
+            System.out.println();
+            for (int j = 0; j < 10; j++) {
+                if ( i == j || i >= j ) {
+                    System.out.print("* ");
+                }
+            }
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         DrawLine();
         DrawBox();
         EmtyBox();
+        DrawTriangle();
     }
 
 }
