@@ -10,10 +10,20 @@ public class Main {
         System.out.println();
     }
 
-
+// Draw box with size 10x10
+    public static void DrawBox() {
+        for (int i = 0; i < 10; i++ ) {
+            System.out.println();
+            for (int j = 0; j < 10; j++) {
+                System.out.print("* ");
+            }
+        }
+        System.out.println();
+    }
 
     public static void main(String[] args) {
         DrawLine();
+        DrawBox();
     }
 
 }
